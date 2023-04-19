@@ -1,0 +1,8 @@
+<h2 class="mat-dialog-title" [align]="'center'">Are you sure?</h2>
+<div class="mat-dialog-content" [align]="'center'">
+    <p>Do you want to delete this record?</p>
+</div>
+<div class="mat-dialog-actions" [align]="'center'">
+    <button mat-stroked-button mat-dialog-close color="warn">Cancel</button>
+    <button mat-flat-button color="warn" [mat-dialog-close]="true" cdkFoculInitial>Delete</button>
+</div>

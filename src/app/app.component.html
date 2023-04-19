@@ -1,0 +1,30 @@
+<mat-sidenav-container class="container" autosize>
+  <mat-sidenav #sidenav mode="side" [opened]="true">
+      <app-sidenav></app-sidenav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+      <div class="content">
+          <div class="toolbar">
+              <mat-toolbar>
+                  <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+                  <div class="box">
+                      <mat-icon [matMenuTriggerFor]="menu">
+                          <mat-icon>person</mat-icon>
+                          <mat-icon>arrow_drop_down</mat-icon>
+                      </mat-icon>
+                      <mat-menu #menu="matMenu">
+                        <button mat-menu-item>Profile</button>
+                        <button mat-menu-item>Logout</button>
+                      </mat-menu>
+                  </div>
+              </mat-toolbar>
+          </div>
+          <div class="main">
+             <router-outlet></router-outlet>
+          </div>
+      </div>
+  </mat-sidenav-content>
+  
+</mat-sidenav-container>
+
+

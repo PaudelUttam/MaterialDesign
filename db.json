@@ -1,0 +1,50 @@
+{
+  "productList": [
+    {
+      "categoryId": 1,
+      "productName": "L.G Television",
+      "unitPrice": "35000",
+      "quantity": "1",
+      "createdOn": "Wed Jun 01 2022",
+      "createdBy": "Admin",
+      "id": 7
+    },
+    {
+      "categoryId": 3,
+      "productName": "King's Size Bed",
+      "unitPrice": "35000",
+      "quantity": "1",
+      "createdOn": "Fri Jun 03 2022",
+      "createdBy": "Admin",
+      "id": 8
+    },
+    {
+      "categoryId": 3,
+      "productName": "Table",
+      "unitPrice": "1400",
+      "quantity": "5",
+      "createdOn": "Fri Jun 03 2022",
+      "createdBy": "Admin",
+      "id": 9
+    },
+    {
+      "categoryId": 4,
+      "productName": "Leather Jacket",
+      "unitPrice": "4000",
+      "quantity": "2",
+      "createdOn": "Fri Jun 03 2022",
+      "createdBy": "Admin",
+      "id": 10
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

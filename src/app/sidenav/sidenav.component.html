@@ -1,0 +1,67 @@
+<div class="navbar">
+    <div class="user">
+        <img src="../../assets/images/admin2.png" alt="">
+        <h4 class="name"><span class="material-icons Icons">
+            check_circle
+            </span>Admin</h4>
+        <p class="para">Email: paudeluttam </p>
+    </div>
+    <div class="menu">
+        <!-- *ngFor="let m of menuList" -->
+        <div class="menu-item">
+           <button mat-button class="menu-button" color="warn" routerLink="/home" routerLinkActive="active-link" (click)="showPage()">
+            <mat-icon>dashboard</mat-icon>
+            <span>Home</span>
+           </button>
+           <mat-divider></mat-divider>
+           <button mat-button class="menu-button" color="warn" routerLink ="/posts" routerLinkActive="active-link">
+            <mat-icon > list_alt</mat-icon>
+            <span>Category</span>
+           </button>
+           <mat-divider></mat-divider>
+           <button mat-button class="menu-button" color="warn" routerLink ="/posts" routerLinkActive="active-link">
+            <mat-icon > list_alt</mat-icon>
+            <span>Products</span>
+           </button>
+           <mat-divider></mat-divider>
+           <button mat-button class="menu-button" color="warn" routerLink ="/login" routerLinkActive="active-link">
+            <mat-icon > list_alt</mat-icon>
+            <span>Sales</span>
+           </button>
+           <mat-divider></mat-divider>
+           <button mat-button class="menu-button" color="warn"
+           [matMenuTriggerFor]="reports" routerLink ="/posts" routerLinkActive="active-link">
+           <mat-icon> insert_drive_file</mat-icon>
+            <span>Reports</span>
+            <mat-icon>arrow_drop_down</mat-icon>
+            <mat-menu #reports="matMenu">
+                <button mat-menu-item >Income/Expenditure</button>
+                <button mat-menu-item >Balance Sheet</button>
+                <button mat-menu-item >Profit/Loss</button>
+                <button mat-menu-item >All Products</button>
+                <button mat-menu-item >Total Sales </button>
+              </mat-menu>
+           </button>
+           <mat-divider></mat-divider>
+           <button mat-button class="menu-button" color="warn" [matMenuTriggerFor]="accountsetting">
+            <mat-icon>settings</mat-icon>
+            <span>Account Settings</span>
+            <mat-icon>arrow_drop_down</mat-icon>
+            <mat-menu #accountsetting="matMenu">
+                <button mat-menu-item >Users</button>
+                <button mat-menu-item >Roles</button>
+              </mat-menu>
+           </button>
+           <mat-divider></mat-divider>
+           <button mat-button class="menu-button" color="warn">
+            <mat-icon>comment</mat-icon>
+            <span>Comments</span>
+           </button>
+           <mat-divider></mat-divider>
+           <button mat-button class="menu-button" color="warn">
+            <mat-icon>pages</mat-icon>
+            <span>Pages</span>
+           </button>
+        </div>
+    </div>
+</div>

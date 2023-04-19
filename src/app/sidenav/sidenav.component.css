@@ -1,0 +1,56 @@
+.user{
+   text-align: center;
+   font-weight: 800;
+   margin-bottom: 50px;
+}
+
+.user img{
+    height: 120px;
+    width: 120px;
+    margin-top: 16px;
+    border-image:fill;
+}
+
+.Icons{
+    font-weight: 200 !important;
+    color: green;
+}
+
+.name{
+    color: rgb(255, 255, 255);
+}
+
+.para{
+    color: #697d95;
+    margin-top: -10px;
+}
+
+.mat-divider{
+    color: rgb(248, 182, 182);
+}
+
+.menu-item .menu-button{
+    display:block;
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+
+.menu-item{
+    margin: 0 10px 0 10px;
+}
+
+.menu-item span{
+    margin-left: 15px;
+    color: #ffff;
+}
+
+.menu-item :hover{
+    background: #2c3344;
+    cursor: pointer;
+}
+
+
+

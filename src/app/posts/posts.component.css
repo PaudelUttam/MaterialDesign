@@ -1,0 +1,9 @@
+.ul-items ul{
+    margin: 0;
+    padding: 0;
+}
+.ul-items ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px;
+}

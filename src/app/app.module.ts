@@ -18,6 +18,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { DialogConfirmationComponent } from './dialog-confirmation/dialog-confirmation.component';
 import { LoginComponent } from './public/login/login.component';
 import { TokenInterceptorService } from './shared/services/interceptor/token-interceptor.service';
+import { ClientComponent } from './public/client/client.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { TokenInterceptorService } from './shared/services/interceptor/token-int
     PostsComponent,
     FooterComponent,
     DialogConfirmationComponent,
-    LoginComponent
+    LoginComponent,
+    ClientComponent
   ],
   imports: [
     BrowserModule,

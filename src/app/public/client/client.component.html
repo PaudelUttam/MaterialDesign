@@ -1,1 +1,24 @@
-<p>client works!</p>
+<div class="toolbar" style="position: relative">
+    <div style="position: fixed; width: 100%">
+      <mat-toolbar [ngStyle]="isFixedPositionReached ? {'background': 'white'} : { 'background': 'transparent'}">
+        <!-- <mat-icon (click)="sidenav.toggle()">menu</mat-icon> -->
+        <div class="box">
+          <mat-icon [matMenuTriggerFor]="menu">
+            <mat-icon>person</mat-icon>
+            <mat-icon>arrow_drop_down</mat-icon>
+          </mat-icon>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>Profile</button>
+            <button mat-menu-item>Logout</button>
+          </mat-menu>
+        </div>
+      </mat-toolbar>
+    </div>
+  
+    <div style="background: rgb(255, 154, 171); height: 1000px"></div>
+  
+    <div
+      (scroll)="onScroll($event)"
+      style="background: rgb(255, 237, 240); height: 7000px" #myElement
+    ></div>
+  </div>
